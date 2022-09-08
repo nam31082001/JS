@@ -1,0 +1,111 @@
+body{
+    position: absolute;
+    z-index: -12;
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    position: relative;
+    z-index: 6;
+}
+
+.header h1 {
+    width: 20%;
+    margin: 0px;
+}
+
+
+.header h5 {
+    margin: 0px;
+    width: 80%;
+    text-align: end;
+    margin-right: 10%;
+}
+
+.header h5:hover {
+    color: red;
+}
+
+.body {
+    float: left;
+    width: 100%;
+    text-align: center;
+
+}
+
+.body div {
+    width: 30%;
+    display: inline-block;
+
+}
+
+.body div img {
+    width: 100%;
+}
+
+#cart {
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    z-index: 2;
+    top: 18px;
+    display: none;
+    animation: cart 0.6s ease;
+}
+@keyframes cart{
+    0%{
+        top:90px;
+    }
+    100%{
+        top:20px;
+       
+        
+    }
+}
+
+#cart div:nth-child(1) {
+   width: 0%;
+   height: 2%;
+   border-bottom: 10px solid rgb(234, 229, 229);
+   border-right: 10px solid  white;
+   border-left: 10px solid  white;
+   position: absolute;
+   right: 10%;
+   
+   
+}
+#cart div:nth-child(2) {
+    width: 80%;
+    height: 400px;
+    background: rgb(234, 229, 229);;
+    position: absolute;
+    top: 20px;
+    left:20%;
+    
+ }
+
+ #addProduct{
+    width: 100%;
+    height: 250px;
+    display: none;
+ }
+ #addProduct label{
+    font-size: 20px;
+    display: block;
+    text-align: center;
+ }
+ #addProduct input{
+    width: 70%;
+    display: block;
+    margin: auto;
+ }
+ #addProduct button{
+    display: block;
+    margin: auto;
+    width: 30%;
+    font-size: 20px;
+ }
+
+
